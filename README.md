@@ -18,3 +18,12 @@ And then run the install shortcut
 ```
 <C-a> I
 ```
+This config also includes some silly icons, for those to work you need a nerd font installed on the terminal. I'm currently using this one.
+```
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
+```
+
+Lastly to remember I'm currently using the colorscheme catpuccin macchiato
+```
+https://github.com/catppuccin/catppuccin
+```
