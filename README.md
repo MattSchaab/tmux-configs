@@ -22,6 +22,11 @@ This config also includes some silly icons, for those to work you need a nerd fo
 ```
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
 ```
+If you want to use cht.sh to search for documentation quickly just do
+```
+<C-a> i
+```
+This requires to have installed cht.sh which you can find [here](https://github.com/chubin/cheat.sh#installation)
 
 Lastly to remember I'm currently using the colorscheme catpuccin macchiato
 ```
