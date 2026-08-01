@@ -6,12 +6,8 @@ The config is mostly just bindings for pane switching like vim and a rebind of `
 
 Note: This is meant for unix systems, on Windows machines I just use WSL.
 
-## How to use
-Remember to run this first
-```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-```
+## Installing
+```bash
 git clone git@github.com:MattSchaab/tmux-configs.git ~/.config/tmux
 ```
 And then run the install shortcut
@@ -32,3 +28,30 @@ Lastly to remember I'm currently using the colorscheme catpuccin macchiato
 ```
 https://github.com/catppuccin/catppuccin
 ```
+
+## Usage
+Tmux is a terminal multiplexer meaning it manages sessions of multiple terminals.
+The bind is a combination you press to trigger actions, since we are in a shell it's hard to have another set of bindings here. I use `<C-a>`
+
+You can create vertical panes with `bind %` and horizontal panes with `bind "`
+You can rebind them with the following in the config
+```
+bind | split-window -h
+bind - split-window -v
+```
+- Move between panes with `bind HJKL` (I think arrows also work but they suck)
+- Close panes `bind x`
+- Detatch session `bind d`
+- Show sessions `bind s`
+
+## Sessions
+When you run `tmux` you automatically create a new session. If you exit and then run it again you'll start at your home directory again, without the history.
+If you want to `attach` to an existing session you can do
+```bash
+tmux a -t session-name
+```
+Using just `a` attaches to the last session
+```bash
+tmux a
+```
+
