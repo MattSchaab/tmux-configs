@@ -43,6 +43,9 @@ bind - split-window -v
 - Close panes `bind x`
 - Detatch session `bind d`
 - Show sessions `bind s`
+- Create a new window  `bind c`
+- Move to window `bind tab-number`
+- Rename windows `bind ,`
 
 ## Sessions
 When you run `tmux` you automatically create a new session. If you exit and then run it again you'll start at your home directory again, without the history.
