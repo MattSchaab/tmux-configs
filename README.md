@@ -34,6 +34,9 @@ Tmux is a terminal multiplexer meaning it manages sessions of multiple terminals
 The bind is a combination you press to trigger actions, since we are in a shell it's hard to have another set of bindings here. I use `<C-a>`
 
 You can create vertical panes with `bind %` and horizontal panes with `bind "`
+<img width="49%" alt="vertical panes" src="https://github.com/user-attachments/assets/110d3990-85a4-4248-a86e-7ec4999dbf06" /> <img width="49%" alt="horizontal panes" src="https://github.com/user-attachments/assets/e0bfc5e5-c08d-4732-b11e-39dc600cd8f9" />
+
+
 You can rebind them with the following in the config
 ```
 bind | split-window -h
