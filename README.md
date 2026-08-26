@@ -4,7 +4,7 @@ The idea of this repo is to have my tmux configurations ready to go just by clon
 
 The config is mostly just bindings for pane switching like vim and a rebind of `<C-b>` to `<C-a>`. Plus a nice colorscheme.
 
-Note: This is meant for unix systems, on Windows machines I just use WSL.
+Note: This is meant for unix systems, on Windows machines I used to run it on WSL. But I haven't used windows since 2024.
 
 ## Installing
 ```bash
