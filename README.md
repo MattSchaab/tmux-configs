@@ -61,3 +61,13 @@ Using just `a` attaches to the last session
 tmux a
 ```
 
+## Automating sessions
+If you want to automatically restore and connect to your previous tmux session on ssh login add this to .zshrc
+```sh
+# Automatically attach interactive SSH logins to tmux.
+# Keep remote commands, file transfers, and shells inside tmux unchanged.
+if [[ -o interactive && -o login && -n ${SSH_TTY-} && -z ${TMUX-} ]] \
+    && command -v tmux >/dev/null 2>&1; then
+  exec tmux new-session -A -s 0
+fi
+```
